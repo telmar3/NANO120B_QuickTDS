@@ -22,8 +22,6 @@ Alternatively the following combines the two prior steps:
 It will generate a randomized url that you can copy and paste into your web browser of choice. If I understood the docs correctly, then the available python libraries depend on the virtual environment on your local machine, rather than from SDSC using the above method.
 
 
-I've only tested this using the previous accounts from NANO110/120A. Normal Python scripts work, though CUDA-based GPU-computing scripts do not since prior ACCESS requested CPU-nodes only ("sbatch: error: Batch job submission failed: Requested node configuration is not available"):
-
 ```bash
 galyleo launch -a csd709 -p shared --cpus 1 --memory 2 --gpus 1 --time-limit 01:30:00 --env-modules cpu,gpu,anaconda3
 ```
