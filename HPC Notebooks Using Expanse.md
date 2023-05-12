@@ -58,6 +58,7 @@ Change allocation "xyz123", number of nodes, time limit, and other launch params
 [2] GPU node:
 /cm/shared/apps/sdsc/galyleo/galyleo.sh launch -A xyz123 -p gpu-shared -n 10 -M 93 -G 1 -t 00:30:00 -e singularitypro/ -s /cm/shared/apps/containers/singularity/tensorflow/tensorflow-2.3.0-gpu-20200929.simg -d /home/$USER/tensorflow
 
+```
 
 ---
 
@@ -77,6 +78,7 @@ HPC (High powered computing) Examples:
 
 Theoretically, we can convert .ipynb notebooks into .py and run that through `sbatch` or `srun`, but I can not get it to work due to not detecting the python libraries. If anyone else has any ideas of how this can work (i.e loading specific modules through the console or through editing the `f.write` lines below), please let me know! Thanks
 Usage: Add/edit the following block into the python script and run the code block. It should automatically send it as a job through EXPANSE. 
+
 ```python
 import multiprocessing
 print("num of cpus:", multiprocessing.cpu_count()) #num of available cpus
